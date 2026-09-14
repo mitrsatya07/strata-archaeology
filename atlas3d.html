@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0d0e" />
+  <meta name="description" content="STRATA Field Atlas, a fully immersive 3D archaeology research journey." />
+  <title>STRATA Field Atlas — 3D Archaeology</title>
+  <link rel="stylesheet" href="atlas3d.css" />
+</head>
+<body data-stage="observe">
+  <div id="loader"><div class="loader-orbit"><i></i><i></i><i></i></div><p>CALIBRATING FIELD ATLAS</p></div>
+  <canvas id="atlas-world" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div><div class="shade" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="index.html"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 2.5c6.8 0 12.3 5.5 12.3 12.3S24.8 27.1 18 33.5C11.2 27.1 5.7 21.6 5.7 14.8S11.2 2.5 18 2.5Z"/><path d="M11 14.8c2.2-3.8 4.5-5.7 7-5.7s4.8 1.9 7 5.7c-2.2 3.8-4.5 5.7-7 5.7s-4.8-1.9-7-5.7Z"/><circle cx="18" cy="14.8" r="2.3"/></svg><span>STRATA <em>ARCHAEOLOGY OF TIME</em></span></a>
+    <div class="top-title"><b>FIELD ATLAS</b><i></i><span id="top-title">01 / OBSERVATION</span></div>
+    <a class="return" href="index.html"><span>Return to the dig</span><b>↗</b></a>
+  </header>
+
+  <aside class="rail" aria-label="Atlas chapters">
+    <a href="#observe" class="rail-link active" data-index="0"><span>01</span><i></i><em>Observe</em></a>
+    <a href="#sites" class="rail-link" data-index="1"><span>02</span><i></i><em>Sites</em></a>
+    <a href="#timeline" class="rail-link" data-index="2"><span>03</span><i></i><em>Timeline</em></a>
+    <a href="#museum" class="rail-link" data-index="3"><span>04</span><i></i><em>Museum</em></a>
+    <a href="#typology" class="rail-link" data-index="4"><span>05</span><i></i><em>Typology</em></a>
+    <a href="#tools" class="rail-link" data-index="5"><span>06</span><i></i><em>Tools</em></a>
+    <a href="#museums" class="rail-link" data-index="6"><span>07</span><i></i><em>Museums</em></a>
+    <a href="#laws" class="rail-link" data-index="7"><span>08</span><i></i><em>Ethics</em></a>
+    <a href="#notes" class="rail-link" data-index="8"><span>09</span><i></i><em>Notes</em></a>
+    <a href="#references" class="rail-link" data-index="9"><span>10</span><i></i><em>Sources</em></a>
+    <a href="#community" class="rail-link" data-index="10"><span>11</span><i></i><em>Peers</em></a>
+    <a href="#opportunities" class="rail-link" data-index="11"><span>12</span><i></i><em>Future</em></a>
+  </aside>
+
+  <main>
+    <section class="chapter active" id="observe" data-index="0" data-stage="observe">
+      <div class="chapter-copy hero-copy"><p class="eyebrow"><span></span>ARCHAEOLENS INSIDE STRATA</p><p class="kicker">01 / VISUAL OBSERVATION</p><h1>Record the <i>visible.</i><br>Then ask why.</h1><p class="lede">Photograph an artefact, sherd, lithic, coin, inscription, mineral or gem. Start with diagnostic evidence—not a story.</p><div class="actions"><button class="primary" data-modal="scan-modal">Begin an observation <b>↗</b></button><a class="quiet" href="https://archaeolens-satya.lovable.app/" target="_blank" rel="noopener">Open source module <span>↗</span></a></div></div>
+      <p class="corner-note">FIELD PROTOCOL<br><b>OBSERVE → CONTEXT → COMPARE</b></p>
+    </section>
+
+    <section class="chapter right-copy" id="sites" data-index="1" data-stage="sites">
+      <div class="chapter-copy"><p class="kicker">02 / SITE DIRECTORY</p><h2>Forty-two doors<br>into the <i>ground.</i></h2><p class="lede">A living index of ASI and UNESCO sites across India—from Harappan cities to rock shelters, stupas and fortifications.</p><div class="mini-spec"><div><span>PINNED</span><b>42+ SITES</b></div><div><span>FILTER</span><b>STATE / PERIOD</b></div><div><span>ANCHORS</span><b>ASI · UNESCO</b></div></div><div class="actions"><a class="outline" href="https://archaeolens-satya.lovable.app/sites" target="_blank" rel="noopener">Explore site index <span>→</span></a><a class="text-action" href="https://asi.nic.in/" target="_blank" rel="noopener">ASI records ↗</a></div></div>
+      <p class="floating left">DHOLAVIRA<br><b>23°53′N · 70°13′E</b></p>
+    </section>
+
+    <section class="chapter" id="timeline" data-index="2" data-stage="timeline">
+      <div class="chapter-copy timeline-copy"><p class="kicker">03 / CULTURAL CHRONOLOGY</p><h2>Three million years<br>in one <i>passage.</i></h2><p class="lede">Walk through Indian archaeology from Lower Paleolithic toolmakers to the modern discipline of archaeology.</p><div class="chronology"><span>LOWER PALEOLITHIC</span><i></i><span>HARAPPAN</span><i></i><span>MAURYAN</span><i></i><span>MUGHAL</span></div><a class="text-action" href="https://archaeolens-satya.lovable.app/timeline" target="_blank" rel="noopener">Open full chronology ↗</a></div>
+      <p class="floating right">c. 2.6 MYA<br><b>FIRST TOOLMAKERS</b></p>
+    </section>
+
+    <section class="chapter right-copy" id="museum" data-index="3" data-stage="museum">
+      <div class="chapter-copy"><p class="kicker">04 / VIRTUAL MUSEUM</p><h2>Ten objects.<br>Ten ways to <i>remember.</i></h2><p class="lede">Step through an illuminated gallery of prehistoric artefacts—from Olduvai handaxes to Harappan blade segments.</p><div class="mini-spec"><div><span>GALLERY</span><b>10 OBJECTS</b></div><div><span>MODE</span><b>WEBGL</b></div><div><span>ACCESS</span><b>WALK / INSPECT</b></div></div><div class="actions"><a class="outline" href="https://archaeolens-satya.lovable.app/museum" target="_blank" rel="noopener">Enter original museum <span>↗</span></a></div></div>
+    </section>
+
+    <section class="chapter" id="typology" data-index="4" data-stage="typology">
+      <div class="chapter-copy"><p class="kicker">05 / POTTERY & SCRIPT TYPOLOGY</p><h2>A surface can hold<br>a whole <i>culture.</i></h2><p class="lede">Read fabric, firing, slip and inscription. From OCP and BRW to NBPW, rouletted ware and Sultanate glaze.</p><div class="chip-row"><span>OCP</span><span>BRW</span><span>PGW</span><span>NBPW</span><span>RW</span><span>RCPW</span></div><a class="text-action" href="https://archaeolens-satya.lovable.app/typology" target="_blank" rel="noopener">Compare typologies ↗</a></div>
+    </section>
+
+    <section class="chapter right-copy" id="tools" data-index="5" data-stage="tools">
+      <div class="chapter-copy"><p class="kicker">06 / STONE TOOL COLLECTION</p><h2>A human hand<br>left its <i>signature.</i></h2><p class="lede">A 3D collection spanning 3.3 million years of technology. Search tools by type, region, material and museum display.</p><div class="mini-spec"><div><span>CATALOGUE</span><b>69+ TOOLS</b></div><div><span>RANGE</span><b>3.3 MYA</b></div><div><span>SOURCE</span><b>MOST / PEDESTAL3D</b></div></div><a class="outline" href="https://archaeolens-satya.lovable.app/stone-tools" target="_blank" rel="noopener">Inspect stone tools <span>↗</span></a></div>
+    </section>
+
+    <section class="chapter" id="museums" data-index="6" data-stage="museums">
+      <div class="chapter-copy museum-copy"><p class="kicker">07 / MUSEUM DIRECTORY</p><h2>Every object needs<br>a place to <i>belong.</i></h2><p class="lede">Locate 52 ASI site museums, state heritage collections and international museums holding Indian archaeological material.</p><div class="actions"><a class="outline" href="https://archaeolens-satya.lovable.app/museums" target="_blank" rel="noopener">Open museum directory <span>→</span></a><a class="text-action" href="https://asi.nic.in/pages/Museums" target="_blank" rel="noopener">ASI museums ↗</a></div></div>
+      <p class="floating right">52 ASI SITE<br><b>MUSEUMS INDEXED</b></p>
+    </section>
+
+    <section class="chapter right-copy" id="laws" data-index="7" data-stage="laws">
+      <div class="chapter-copy"><p class="kicker">08 / HERITAGE & REPORTING</p><h2>To protect a find<br>is to <i>leave it.</i></h2><p class="lede">Do not dig, lift, clean or remove a suspected antiquity. Photograph in situ, note GPS, and report responsibly.</p><div class="law-list"><span>AMASR ACT · 1958</span><span>ANTIQUITIES ACT · 1972</span><span>UNESCO · 1970</span></div><div class="actions"><a class="outline alert" href="https://archaeolens-satya.lovable.app/heritage-laws" target="_blank" rel="noopener">Read chance-find protocol <span>→</span></a><a class="text-action" href="https://asi.nic.in/circles/" target="_blank" rel="noopener">Find ASI circle ↗</a></div></div>
+    </section>
+
+    <section class="chapter" id="notes" data-index="8" data-stage="notes">
+      <div class="chapter-copy"><p class="kicker">09 / FIELD NOTEBOOK</p><h2>Context is the<br>first <i>evidence.</i></h2><p class="lede">Keep observations with image, coordinates, trench, layer, scale and narrative context. Your notes live in this browser.</p><div class="actions"><button class="primary cyan" data-modal="note-modal">Create a field note <b>+</b></button><a class="quiet" href="https://archaeolens-satya.lovable.app/field-notes" target="_blank" rel="noopener">Open synced notes <span>↗</span></a></div></div>
+      <p class="floating right" id="saved-note-count">LOCAL RECORD<br><b>0 SAVED NOTES</b></p>
+    </section>
+
+    <section class="chapter right-copy" id="references" data-index="9" data-stage="references">
+      <div class="chapter-copy"><p class="kicker">10 / BIBLIOGRAPHY</p><h2>Claims need a<br>trail of <i>evidence.</i></h2><p class="lede">Follow excavation reports, books, journal articles, statutes and official records—the sources behind a careful field observation.</p><div class="mini-spec"><div><span>BOOKS</span><b>20</b></div><div><span>REPORTS</span><b>03</b></div><div><span>OFFICIAL</span><b>05+</b></div></div><a class="outline" href="https://archaeolens-satya.lovable.app/references" target="_blank" rel="noopener">Browse all citations <span>→</span></a></div>
+    </section>
+
+    <section class="chapter" id="community" data-index="10" data-stage="community">
+      <div class="chapter-copy"><p class="kicker">11 / PEER REVIEW</p><h2>Knowledge gets<br>stronger when <i>shared.</i></h2><p class="lede">Ask for identification help, exchange methods and discuss archaeological ethics—without exposing sensitive coordinates.</p><div class="actions"><a class="outline" href="https://archaeolens-satya.lovable.app/community" target="_blank" rel="noopener">Enter peer forum <span>↗</span></a><a class="text-action" href="https://archaeolens-satya.lovable.app/about" target="_blank" rel="noopener">Ethics & methods ↗</a></div></div>
+    </section>
+
+    <section class="chapter final" id="opportunities" data-index="11" data-stage="future">
+      <div class="chapter-copy"><p class="kicker">12 / THE FUTURE IS FIELDWORK</p><h2>Keep digging.<br>Keep <i>asking.</i></h2><p class="lede">Find funded PhD positions, research opportunities, grants and a community committed to preserving the archaeological record.</p><div class="actions"><a class="primary" href="https://www.higherjobz.com/?s=archaeology" target="_blank" rel="noopener">Browse archaeology careers <b>↗</b></a><a class="quiet" href="atlas3d.html#observe">Restart Field Atlas <span>→</span></a></div></div>
+      <footer><span>STRATA × ARCHAEOLENS · A FIELD-FIRST ARCHAEOLOGY EXPERIENCE</span><span>© 2026</span></footer>
+    </section>
+  </main>
+
+  <div class="depth-meter" aria-hidden="true"><span>ATLAS DEPTH</span><i><b id="progress"></b></i><em id="chapter-number">01 / 12</em></div>
+  <div class="system-readout" aria-hidden="true"><span id="coords">FIELD MODE / READY</span><i></i><span id="scene-label">OBSERVATION LENS</span></div>
+
+  <dialog id="scan-modal" class="modal"><button class="close" data-close>×</button><p class="modal-kicker">VISUAL OBSERVATION / PRIVATE BROWSER SESSION</p><h3>Start with what the camera can prove.</h3><label class="upload-zone" for="object-photo"><input type="file" id="object-photo" accept="image/*"><span id="upload-label">Choose an artefact photograph</span><small>JPG, PNG or WEBP · add a scale and context photo when possible</small></label><div id="preview-wrap" class="preview-wrap" hidden><img id="object-preview" alt="Selected object preview"><p>Visible record prepared. Add a field note for context; professional authentication requires physical examination.</p></div><button class="modal-action" data-close>Save visual record</button></dialog>
+  <dialog id="note-modal" class="modal note-modal"><button class="close" data-close>×</button><p class="modal-kicker">FIELD NOTEBOOK / LOCAL STORAGE</p><h3>Preserve the context.</h3><form id="note-form"><label>Note title<input required name="title" placeholder="e.g. Sherd observation — trench 17B"></label><label>Location / context<input name="context" placeholder="Site, grid, layer or coordinates"></label><label>Observation<textarea required name="observation" placeholder="Record only what was visible, measured or documented."></textarea></label><button class="modal-action" type="submit">Save field note <span>+</span></button></form><p class="privacy">This demo saves notes only in this browser. Clear browser data and they will be removed.</p></dialog>
+  <script type="module" src="atlas3d.js"></script>
+</body>
+</html>

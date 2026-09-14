@@ -1,27 +1,33 @@
-# STRATA — Archaeology of Time
+# STRATA × ArchaeoLens — Full 3D Field Atlas
 
-A cinematic 3D archaeology experience and integrated research atlas.
+## This version is fully 3D
 
-## What is included
+`index.html` is STRATA’s original cinematic descent through the excavation, chamber, artifact, lab and archive.
 
-- `index.html` — STRATA’s original 3D scroll journey: excavation, strata, chamber, artifact scan, lab and archive.
-- `atlas.html` — **STRATA Field Atlas**, which integrates the complete live ArchaeoLens field edition under the STRATA experience.
-- The Field Atlas includes access to ArchaeoLens observation, site directory, cultural timeline, WebGL museum, pottery and scripts typology, 3D stone tools, museum directory, heritage law guidance, field notes, references, community, account and contact modules.
+`atlas3d.html` is the **fully immersive ArchaeoLens Field Atlas**. Scrolling moves the camera through twelve 3D research environments:
 
-The Atlas retains the live ArchaeoLens module as a secure framed integration, preserving its existing interactive functions, original links and account-connected tools.
+1. Visual observation lens
+2. Archaeological Sites of India
+3. Cultural chronology
+4. Virtual Museum
+5. Pottery and script typology
+6. Stone-tool collection
+7. Museum directory
+8. Heritage law and chance-find protocol
+9. Field notebook
+10. References and bibliography
+11. Community peer review
+12. Archaeology careers and research opportunities
 
-## GitHub Pages deployment
+The 3D Atlas has direct source links to the corresponding live ArchaeoLens modules and primary sources such as ASI. It also includes a browser-local photo observation panel and field notebook.
 
-1. Upload the **contents** of this folder to the root of your GitHub repository.
-2. Ensure `index.html` is at the root of the repository.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Choose `main` and `/(root)`, then click **Save**.
+## Publish/update with GitHub Pages
 
-For a repository named `strata-archaeology` under `mitrsatya07`, the live link will be:
+Upload the contents of this folder to the root of your GitHub repository. `index.html` must be at the repository root.
 
-`https://mitrsatya07.github.io/strata-archaeology/`
+Then use **Settings → Pages → Deploy from a branch → main → /(root) → Save**.
 
-## Field Atlas link
+For `mitrsatya07/strata-archaeology`, live URLs will be:
 
-`https://mitrsatya07.github.io/strata-archaeology/atlas.html?view=scan`
+- Main STRATA: `https://mitrsatya07.github.io/strata-archaeology/`
+- Full 3D Field Atlas: `https://mitrsatya07.github.io/strata-archaeology/atlas3d.html`
