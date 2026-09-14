@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101416" />
+  <meta name="description" content="STRATA Field Atlas: ArchaeoLens research, observation, ethics, collections and field records." />
+  <title>STRATA Field Atlas — ArchaeoLens</title>
+  <link rel="stylesheet" href="atlas.css" />
+</head>
+<body>
+  <div class="atlas-noise" aria-hidden="true"></div>
+  <header class="atlas-header">
+    <a class="atlas-brand" href="index.html" aria-label="Return to STRATA">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 2.5c6.8 0 12.3 5.5 12.3 12.3S24.8 27.1 18 33.5C11.2 27.1 5.7 21.6 5.7 14.8S11.2 2.5 18 2.5Z"/><path d="M11 14.8c2.2-3.8 4.5-5.7 7-5.7s4.8 1.9 7 5.7c-2.2 3.8-4.5 5.7-7 5.7s-4.8-1.9-7-5.7Z"/><circle cx="18" cy="14.8" r="2.3"/></svg>
+      <span>STRATA <em>ARCHAEOLOGY OF TIME</em></span>
+    </a>
+    <div class="atlas-title"><span>FIELD ATLAS</span><i></i><b id="crumb">ARCHAEOLENS / HOME</b></div>
+    <a class="return-link" href="index.html#archive"><span>Return to the dig</span> <b>↗</b></a>
+  </header>
+
+  <div class="atlas-app">
+    <aside class="atlas-sidebar">
+      <div class="sidebar-intro">
+        <p>THE FIELD EDITION · ISSUE 01</p>
+        <h1>Research,<br><i>within reach.</i></h1>
+        <span>ArchaeoLens, now inside the STRATA field archive.</span>
+      </div>
+      <nav id="module-nav" class="module-nav" aria-label="Field Atlas modules"></nav>
+      <div class="sidebar-foot"><span>LIVE RESEARCH SYSTEM</span><i></i><b>11 MODULES</b></div>
+    </aside>
+
+    <section class="viewer-zone">
+      <div class="viewer-topline">
+        <div><span id="module-number">01</span><b id="module-type">OBSERVATION</b></div>
+        <p id="module-summary">Record the visible before the interpretation.</p>
+        <a id="open-source" href="https://archaeolens-satya.lovable.app" target="_blank" rel="noopener">Open full module <span>↗</span></a>
+      </div>
+      <div class="viewer-shell">
+        <div class="frame-loader" id="frame-loader"><span></span><p>OPENING FIELD RECORD</p></div>
+        <iframe id="atlas-frame" title="ArchaeoLens inside STRATA Field Atlas" allow="camera; geolocation; clipboard-read; clipboard-write" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="frame-label"><i></i><span>ARCHAEOLENS MODULE / LIVE</span></div>
+      </div>
+      <div class="archive-disclaimer">Evidence must remain separate from interpretation. Do not disturb, remove or trade archaeological finds.</div>
+    </section>
+  </div>
+  <script src="atlas.js"></script>
+</body>
+</html>
