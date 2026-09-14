@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090b0c" />
+  <meta name="description" content="STRATA — an immersive archaeology experience." />
+  <title>STRATA — Archaeology of Time</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-stage="surface">
+  <div id="loading" aria-live="polite">
+    <div class="loader-mark"><span></span><span></span><span></span></div>
+    <p>PREPARING THE EXCAVATION</p>
+  </div>
+
+  <canvas id="world" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="ambient-readout" aria-hidden="true"><span id="coordinate">27°10′N / 73°38′E</span><i></i><span id="depth">SURFACE</span></div>
+
+  <a class="skip" href="#journey">Skip to the journey</a>
+
+  <header class="topbar">
+    <a href="#top" class="brand" aria-label="STRATA home">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 2.5c6.8 0 12.3 5.5 12.3 12.3S24.8 27.1 18 33.5C11.2 27.1 5.7 21.6 5.7 14.8S11.2 2.5 18 2.5Z"/><path d="M11 14.8c2.2-3.8 4.5-5.7 7-5.7s4.8 1.9 7 5.7c-2.2 3.8-4.5 5.7-7 5.7s-4.8-1.9-7-5.7Z"/><circle cx="18" cy="14.8" r="2.3"/></svg>
+      <span>STRATA <em>ARCHAEOLOGY OF TIME</em></span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#the-dig">The dig</a>
+      <a href="#object">Collection</a>
+      <a href="#archive">Field archive</a>
+    </nav>
+    <a href="#archive" class="nav-action"><span>Enter archive</span><b>↗</b></a>
+  </header>
+
+  <aside class="chapter-rail" aria-label="Journey chapters">
+    <a href="#top" data-index="0" class="rail-link active"><span>00</span><i></i><em>Surface</em></a>
+    <a href="#descent" data-index="1" class="rail-link"><span>01</span><i></i><em>Descent</em></a>
+    <a href="#chamber" data-index="2" class="rail-link"><span>02</span><i></i><em>Chamber</em></a>
+    <a href="#object" data-index="3" class="rail-link"><span>03</span><i></i><em>Object</em></a>
+    <a href="#lab" data-index="4" class="rail-link"><span>04</span><i></i><em>Lab</em></a>
+    <a href="#archive" data-index="5" class="rail-link"><span>05</span><i></i><em>Archive</em></a>
+  </aside>
+
+  <main id="journey">
+    <section id="top" class="panel hero-panel chapter" data-index="0" data-stage="surface">
+      <div class="eyebrow"><span></span>EXPEDITION 17 · THAR DESERT</div>
+      <div class="hero-copy copy-block">
+        <p class="kicker">FIELD INTELLIGENCE / 2026</p>
+        <h1>History isn’t<br><i>behind</i> us.</h1>
+        <p class="lede">It is beneath us—layered in earth, encoded in objects, and waiting to be read with care.</p>
+        <a class="explore-button" href="#descent"><span class="button-icon">↓</span><span>Begin the descent</span><small>SCROLL TO EXCAVATE</small></a>
+      </div>
+      <div class="hero-note"><b>1,604</b><span>years between<br>surface & chamber</span></div>
+      <p class="scroll-prompt">SCROLL TO GO BELOW <span>↓</span></p>
+    </section>
+
+    <section id="descent" class="panel descent-panel chapter" data-index="1" data-stage="descent">
+      <div class="copy-block side-copy">
+        <p class="kicker">01 / STRATIGRAPHY</p>
+        <h2>The ground keeps<br>its <i>memory.</i></h2>
+        <p class="lede">Every centimetre is a timestamp. We trace the silent transition from lived landscape to archaeological record.</p>
+        <div class="data-line"><span>DEPTH</span><b>04.7 M</b><i></i><span>CONTEXT</span><b>17–B</b></div>
+      </div>
+      <p class="floating-caption left-cap">SEDIMENTARY<br>LAYER 04</p>
+    </section>
+
+    <section id="chamber" class="panel chamber-panel chapter" data-index="2" data-stage="chamber">
+      <div class="copy-block chamber-copy">
+        <p class="kicker">02 / CHAMBER 17</p>
+        <h2>A room sealed<br>against <i>time.</i></h2>
+        <p class="lede">A ritual threshold. Four limestone columns. A space untouched by daylight for sixteen centuries.</p>
+        <div class="quote-mark">“</div>
+        <p class="micro-note">DOCUMENTED IN SITU · 11 OCT 2026</p>
+      </div>
+      <p class="floating-caption right-cap">NORTH EAST<br>RECESS</p>
+    </section>
+
+    <section id="object" class="panel object-panel chapter" data-index="3" data-stage="object">
+      <div class="copy-block object-copy">
+        <p class="kicker">03 / OBJECT 014</p>
+        <h2>What survived<br>was <i>intentional.</i></h2>
+        <p class="lede">A votive vessel in fired clay. Its markings point to a network of trade, ritual and memory that stretched far beyond this desert.</p>
+        <div class="object-details">
+          <div><span>MATERIAL</span><b>RED WARE / MICA</b></div>
+          <div><span>DATED</span><b>422–576 CE</b></div>
+          <div><span>STATUS</span><b>UNDER STUDY</b></div>
+        </div>
+      </div>
+      <p class="floating-caption left-cap bright">3D SCAN<br>0.04 MM ACCURACY</p>
+    </section>
+
+    <section id="lab" class="panel lab-panel chapter" data-index="4" data-stage="lab">
+      <div class="copy-block lab-copy">
+        <p class="kicker">04 / THE LAB</p>
+        <h2>Evidence,<br>not <i>assumption.</i></h2>
+        <p class="lede">From soil chemistry to photogrammetry, every claim is held up to a wider field of proof.</p>
+        <a class="text-link" href="#archive">Explore the research protocol <span>↗</span></a>
+      </div>
+      <div class="lab-stats"><div><b>18,402</b><span>surface points<br>captured</span></div><div><b>97.8%</b><span>ceramic profile<br>reconstructed</span></div></div>
+    </section>
+
+    <section id="archive" class="panel archive-panel chapter" data-index="5" data-stage="archive">
+      <div class="copy-block archive-copy">
+        <p class="kicker">05 / OPEN THE ARCHIVE</p>
+        <h2>The past belongs<br>to <i>everyone.</i></h2>
+        <p class="lede">Follow active excavations, inspect digitised finds and support the work that keeps cultural memory in public hands.</p>
+        <div class="archive-actions">
+          <a href="#top" class="primary-action">Explore the collection <span>→</span></a>
+          <a href="#top" class="secondary-action">Support a dig <span>↗</span></a>
+        </div>
+      </div>
+      <footer class="footer"><span>STRATA / AN OPEN ARCHAEOLOGY PROJECT</span><span>© 2026</span><span>BUILT TO REMEMBER</span></footer>
+    </section>
+  </main>
+
+  <div class="progress-wrap" aria-hidden="true"><span>DEPTH</span><div class="progress-track"><i id="progress"></i></div><b id="progress-label">00</b></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
